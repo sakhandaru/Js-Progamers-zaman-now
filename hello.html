@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.writeln("<p>Hello komentar</p>");// tag p adalah HTML
+        /*dalam js tipe data number hanya ada 1 dan jadi satu untuk pecahan dan lainnya. dan cara menulisnya tidak dibarengi dengan tanda petik*/
+        document.write(100);
+        document.write("</br>");
+        document.write(100.3);
+        document.write("</br>");
+        document.write(0b0101);// contoh penggunaan angak binary tapi tetep menjadi desimal
+        document.write("</br>");
+        
+        /*
+        dalam js kita bisa membuat angka basis binary, hexa, octal
+        hexa = 0xFF
+        octal = 0o754
+        binary = 0b1010
+        */
+        //boolean
+        document.write(true);
+        document.write("</br>");
+        document.write(false);
+        document.write("</br>");
+
+        //string(kosong juga boleh)
+        document.write("contohnya tulisan ini");// boleh pake petik dua atau petik satu 
+        document.write("</br>");
+        document.write("");
+        // data sting bisa digabungkan dengan operator +
+        document.write("ini "+"data string"+"</br>")// bebas sebanyak banyaknya
+        
+        /*
+        - dalam js kita bisa menggunakan escape squance \t,\n,\',\\
+        - document.write tidak menambah baris beda dengan writeln
+        */
+
+        /*!!!VARIABLE!!!*/
+        /*
+        btw kita tidak terpaku harus menggunakan satu tipe data
+        karena javascript itu dinamic language
+        */
+       var fullName;
+       var firstName;
+
+       fullName = "eko setiawan";
+       firstName = "daradaru";
+       fullName = "aji prakoso";
+
+       var namaAsli = "rifqi sakho";
+       document.writeln(fullName + namaAsli);
+
+       //let dan const
+       let namaAsli2 = "sakho";// let adalah pengganti untuk var dan bis diubah ubah
+       const namaTetap = "Risa";
+       namaTetap = "risaaa";// maka kalau dicek di console maka akan ada error karena const tidak boleh dirubah
+
+       document.write(namaTetap);
+
+        
+    </script>
+</body>
+</html>
